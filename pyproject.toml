@@ -1,0 +1,19 @@
+# https://github.com/python-poetry/poetry#introduction
+[tool.poetry]
+name = "ds_and_algo"
+version = "0.1.0"
+description = "The description of the package"
+
+authors = [
+    "Umesh Kadam <umeshkflance@gmail.com>"
+]
+
+[tool.poetry.dependencies]
+python = "3.8.x"
+toml = "^0.9"
+
+[tool.poetry.dev-dependencies]
+python-dotenv = "^0.13.0"
+
+[tool.black]
+line-length = 120

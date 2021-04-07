@@ -1,0 +1,18 @@
+# Reference https://pre-commit.com/#2-add-a-pre-commit-configuration
+#           https://github.com/pre-commit/pre-commit-hooks#using-pre-commit-hooks-with-pre-commit
+
+
+# See https://pre-commit.com/hooks.html for more hooks
+
+repos:
+  # Reference https://github.com/psf/black#version-control-integration
+  - repo: https://github.com/psf/black
+    rev: 20.8b1 # Replace by any tag/version: https://github.com/psf/black/tags
+    hooks:
+      - id: black
+        language_version: python3
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
